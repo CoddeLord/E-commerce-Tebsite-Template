@@ -1,0 +1,211 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+        --bg-color: #04364A;
+        --ikinciRenk: #176B87;
+        --ucunRenk: #64CCC5;
+        --dortRenk: #DAFFFB;
+
+}
+
+::-webkit-scrollbar {
+        display: none;
+}
+
+body {
+        height: 100Vh;
+        width: 100%;
+        background-color: var(--bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.navbar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        background-color: var(--ikinciRenk);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 10px 10px var(--ucunRenk);
+}
+
+.logo img {
+        width: 70px;
+        margin-left: -100px;
+}
+
+.search {
+        width: 700px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+}
+
+.search form {
+        width: 700px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+}
+
+.search input[type=search] {
+        width: 100%;
+        height: 100%;
+        color: var(--bg-color);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        outline: none;
+        border: none;
+        padding: 0 10px;
+        text-align: center;
+}
+
+.ara {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+        color: var(--bg-color);
+        font-size: 20px;
+}
+
+.user {
+        width: 400px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+}
+
+.user-sec {
+        
+        margin: 0 10px;
+}
+
+.user-sec p {
+        margin-left: 7px;
+        font-weight: 900;
+        position: relative;
+}
+
+.user-sec :hover {
+        color: var(--bg-color);
+        text-shadow: 0 5px 10px white;
+}
+
+.user-sec:hover .register{
+        display: block;
+}
+
+.register{
+        display: none;
+        position: absolute;
+        width: 170px;
+        height: 130px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: white;
+
+}
+
+.register p,a{
+        margin: 5px;
+        text-decoration: none;
+        color: black;
+}
+
+
+.container{
+        width: 90%;
+        height: 100%;
+        position: relative;
+        padding: 0 80px;
+        padding: 20px;
+        margin-top: 220px;
+        background-color: var(--ikinciRenk);
+        justify-content: center;
+        transition: all 1s ease-in-out;
+        z-index: 1;
+        border-radius: 10px;
+}
+
+.line-box{
+        width: 100%;
+        height: 120px;
+        padding: 10px;
+        border: 2px solid var(--bg-color);
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        margin: 5px 0;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.image-box{
+        height: 100%;
+        width: 100px;
+        background-color: aqua;
+        border-radius: 10px;
+}
+
+.info-box{
+        width: 200px;
+
+        text-align: center;
+}
+
+.info-box p{
+        color: green;
+        text-decoration: underline;
+        margin: 5px;
+}
+
+.detay-btn{
+        width: 150px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+}
+.detay-btn [type = button]{
+        padding: 5px 10px;
+        height: 35px;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        background-color: var(--bg-color);
+}
+
+
+.detay-btn [type = button]:hover{
+        padding: 5px 10px;
+        height: 35px;
+        color: var(--bg-color);
+        outline: none;
+        border: 1px solid wheat;
+        border-radius: 7px;
+        background-color: var(--ikinciRenk);
+        transition: all 0.4s ease;
+}
